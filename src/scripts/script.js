@@ -34,7 +34,7 @@ window.onload = async function () {
     const advancedButton = document.getElementById("js-advanced-button");
     const aiType = document.getElementById("js-ai-dropdown");
   
-    const MODEL_URL = './models';
+    const MODEL_URL = './src/scripts/models';
   
     var globalFile = "./assets/example (1).png";
     var counter = 0;
