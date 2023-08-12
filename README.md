@@ -1,6 +1,21 @@
-# Getting Started with Create React App
+# AI Pholio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Enhance your photos in your browser.
+
+Categorize, search, change resolution, tag people and objects.
+
+
+# Features to build
+- Basic layout
+- Upload.
+- Categorize.
+- Segment
+- extract embeddings
+- enhance
+- selective crop
+- Reverse image search.
+
+<!-- # Getting Started with Create React App
 
 ## Available Scripts
 
@@ -67,4 +82,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify) -->
