@@ -6,9 +6,11 @@ Categorize, search, change resolution, tag people and objects.
 
 
 # Features to build
-- Basic layout
-- Upload.
-- Categorize.
+- ~~Basic layout~~
+- ~~Upload~~
+    - prettify
+- ~~Categorize~~
+    - better model
 - Segment
 - extract embeddings
 - enhance
