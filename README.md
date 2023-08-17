@@ -1,4 +1,4 @@
-# AI Pholio
+# FolioAI
 
 Enhance your photos in your browser.
 
