@@ -1,9 +1,9 @@
 import React from 'react';
 
-const CategorizeButton = ({ runInference, hasImages }) => (
+const CategorizeButton = ({ handleCategorization, hasImages, viewCategorized}) => (
   hasImages && (
     <button
-      onClick={runInference}
+      onClick={handleCategorization}
       style={{
         background: '#4CAF50',
         border: 'none',
@@ -18,7 +18,9 @@ const CategorizeButton = ({ runInference, hasImages }) => (
         borderRadius: '4px',
       }}
     >
-      Categorize Images
+      {viewCategorized ? "Uncategorize" : "Categorize"}
+      {/* text */}
+      {/* Categorize Images */}
     </button>
   )
 );

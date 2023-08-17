@@ -16,6 +16,7 @@ const Component = (props) => {
     const [sliderIndex, setSliderIndex] = useState(0);
     const [categories, setCategories] = useState({});
     const [isCategorized, setIsCategorized] = useState(false);
+    const [viewCategorized, setViewCategorized] = useState(false);
     const [isLoading, setIsLoading] = useState(false);
 
     const handleDragOver = (e) => {
@@ -78,6 +79,20 @@ const Component = (props) => {
         setIsCategorized(true); // Categorization is complete
         setIsLoading(false);
         };
+    
+        // View categories or not.
+    const toggleCategorization = () => {
+        setViewCategorized(!viewCategorized);
+        };
+    
+    const handleCategorization = async () => {
+        if (!isCategorized) {
+            await runInference(); // Existing inference function
+            setIsCategorized(true);
+        }
+        toggleCategorization();
+        };
+          
 
     return (
         <div>
@@ -88,9 +103,9 @@ const Component = (props) => {
                 handleFileUpload={handleFileUpload}
                 fileInput={fileInput}
             />
-            <Buttons runInference={runInference} hasImages={images.length > 0} />
+            <Buttons handleCategorization={handleCategorization} hasImages={images.length > 0} viewCategorized={viewCategorized}/>
             {isLoading && <Animations />}
-            {isCategorized ? <Categories categories={categories} /> :
+            {viewCategorized ? <Categories categories={categories} /> :
                 <ImageGrid  images={images}
                             showSlider={showSlider}
                             sliderIndex={sliderIndex}
