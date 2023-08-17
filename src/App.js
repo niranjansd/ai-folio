@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
-import UploadComponent from './UploadComponent';
+// import UploadComponent from './UploadComponent';
+import Component from './Component';
 
 function App() {
   return (
@@ -9,7 +10,8 @@ function App() {
         <h1>FolioAI</h1>
       </header>
       <main>
-        <UploadComponent />
+      {/* <UploadComponent /> */}
+      <Component />
       </main>
     </div>
   );
