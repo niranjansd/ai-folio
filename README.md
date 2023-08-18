@@ -11,7 +11,8 @@ Categorize, search, change resolution, tag people and objects.
     - prettify
 - ~~Categorize~~
     - better model
-- Segment
+- SAM
+    - Import SAM and make the demo work on slider images.
 - extract embeddings
 - enhance
 - selective crop
